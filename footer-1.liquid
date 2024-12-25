@@ -1,0 +1,353 @@
+{% style %}
+#shopify-section-{{section.id}} .copyright {
+    font-family: "Onest";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+  }
+
+  #shopify-section-{{section.id}} a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  @media screen and (max-width: 750px) {
+    #shopify-section-{{section.id}} .copyright {
+      padding: 10px;
+    }
+  }
+  #shopify-section-{{section.id}} .footer-hr {
+    margin-block: 10px;
+  }
+  #shopify-section-{{section.id}} .inner-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 50px;
+  }
+  @media screen and (max-width: 1250px) {
+    #shopify-section-{{section.id}} .inner-container {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+  @media screen and (max-width: 1020px) {
+    #shopify-section-{{section.id}} .inner-container {
+      grid-template-columns: 2fr 1fr 1fr;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    #shopify-section-{{section.id}} .inner-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media screen and (max-width: 1250px) {
+    #shopify-section-{{section.id}} .inner-container {
+      padding: 30px;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    #shopify-section-{{section.id}} .inner-container {
+      padding: 20px;
+      gap: 10px;
+    }
+  }
+  @media screen and (max-width: 1020px) {
+    #shopify-section-{{section.id}} .inner-container .newsletter {
+      grid-column-end: -1;
+      grid-column-start: 1;
+    }
+  }
+  #shopify-section-{{section.id}} .inner-container .brand-information {
+    width: 323px;
+    max-width: 100%;
+  }
+  @media screen and (max-width: 1250px) {
+    #shopify-section-{{section.id}} .inner-container .brand-information {
+      width: auto;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    #shopify-section-{{section.id}} .inner-container .brand-information {
+      grid-column-end: -1;
+      grid-column-start: 1;
+    }
+  }
+  #shopify-section-{{section.id}} .inner-container .footer-column .space-equal {
+    margin: 15px 0;
+  }
+  #shopify-section-{{section.id}} .inner-container .footer-column .link-title {
+    font-family: "Onest";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    margin-bottom: 12px;
+  }
+  @media screen and (max-width: 750px) {
+    #shopify-section-{{section.id}} .inner-container .footer-column .link-title {
+      font-size: 16px;
+    }
+  }
+  #shopify-section-{{section.id}} .inner-container .footer-column ul.links-list li {
+    list-style: none;
+  }
+  #shopify-section-{{section.id}} .inner-container .footer-column ul.links-list li:not(:nth-child(1)) {
+    margin-block: 12px;
+  }
+  #shopify-section-{{section.id}} .inner-container .footer-column ul.links-list li a {
+    font-family: "Onest";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.33;
+    color: #3F3F46;
+    text-decoration: none;
+  }
+  @media screen and (max-width: 750px) {
+    #shopify-section-{{section.id}} .inner-container .footer-column ul.links-list li a {
+      font-size: 14px;
+    }
+  }
+  #shopify-section-{{section.id}} .inner-container .logo-wrapper img {
+    width: 162px;
+  }
+  #shopify-section-{{section.id}} .inner-container .description {
+    font-family: "Onest";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #3F3F46;
+  }
+  #shopify-section-{{section.id}} .inner-container .rte-description {
+    margin-bottom: 20px;
+    font-family: "Onest";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.38;
+    color: #3F3F46;
+  }
+  #shopify-section-{{section.id}} .inner-container .scoial-media ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 15px;
+  }
+  #shopify-section-{{section.id}} .inner-container form .form-container {
+    display: flex;
+    background: #F5F5F5;
+    border: 1px solid #EB3435;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  #shopify-section-{{section.id}} .inner-container form input {
+    flex: 1 1 calc(100% - 100px);
+    width: calc(100% - 100px);
+    font-family: "Onest";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #616161;
+    min-height: 66px;
+    border: none;
+    padding: 0 20px;
+  }
+  #shopify-section-{{section.id}} .inner-container form button {
+    flex: 0 0 100px;
+    font-family: "Onest";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #FFFFFF;
+    background: #EB3435;
+    min-height: 66px;
+    width: 100px;
+    text-align: center;
+    border: none;
+  }
+{% endstyle %}
+
+<div class="inner-container">
+    <div class="footer-column brand-information">
+        <div class="logo-wrapper space-equal">
+            <a href="{{ routes.root_url }}">
+                <img src="{{ section.settings.logo | img_url: '300x' }}" width="300" alt="{{ shop.name }}">
+            </a>
+        </div>
+        <div class="description space-equal">
+            {{ section.settings.discription }}
+        </div>
+        <div class="scoial-media space-equal">
+            <ul class="social-links-container">
+                <li>
+                    <a href="">
+                        <img src="./images/instagram.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./images/linked-in.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./images/meta.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./images/email.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-column links">
+        <h3 class="link-title">
+            {{ section.settings.title1 }}
+        </h3>
+        <ul class="links-list">
+            {% for link in section.settings.menu1.links %}
+                <li>
+                    <a href="{{ link.url }}">
+                        {{ link.title }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="footer-column links">
+        <h3 class="link-title">
+            {{ section.settings.title2 }}
+        </h3>
+        <ul class="links-list">
+            {% for link in section.settings.menu2.links %}
+                <li>
+                    <a href="{{ link.url }}">
+                        {{ link.title }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="footer-column newsletter">
+        <h3 class="link-title">
+            {{ section.settings.title3 }}
+        </h3>
+        <div class="rte-description">
+            {{ section.settings.news_description }}
+        </div>
+        <form action="">
+            <div class="form-container">
+                <input type="email" name="email" placeholder="{{ section.settings.placeholder }}">
+                <button type="submit">
+                    {{ section.settings.button_text }}
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+<hr class="footer-hr">
+<div class="copyright">
+    Copyrights &copy; {{ 'now' | date: '%Y' }} {{ shop.name | link_to: routes.root_url }}. All rights reserved
+</div>
+
+{% schema %}
+{
+    "name": "Footer",
+    "tag": "footer",
+    "enabled_on": {
+        "groups": ["footer"]
+    },
+    "presets": [
+        {
+            "name":"Footer"
+        }
+    ],
+    "settings": [
+        {
+            "type": "header",
+            "content": "Brand Info"
+        },
+        {
+            "type": "image_picker",
+            "id": "logo",
+            "label": "Logo"
+        },
+        {
+            "type": "richtext",
+            "id": "discription",
+            "label": "Description",
+            "default": "<p>Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
+        },
+        {
+            "type": "header",
+            "content": "Links 1"
+        },
+        {
+            "type": "text",
+            "id": "title1",
+            "label": "Title",
+            "default": "Quick links"
+        },
+        {
+            "type": "link_list",
+            "id": "menu1",
+            "label": "Menu",
+            "default": "footer"
+        },
+        {
+            "type": "header",
+            "content": "Links 2"
+        },
+        {
+            "type": "text",
+            "id": "title2",
+            "label": "Title",
+            "default": "Events"
+        },
+        {
+            "type": "link_list",
+            "id": "menu2",
+            "label": "Menu",
+            "default": "footer"
+        },
+        {
+            "type": "header",
+            "content": "Newsletter"
+        },
+        {
+            "type": "text",
+            "id": "title3",
+            "label": "Title",
+            "default": "Newsletter"
+        },
+        {
+            "type": "richtext",
+            "id": "news_description",
+            "label": "Description",
+            "default": "<p>Be the first to get product launches, discounts and exclusive content straight to your inbox.</p>"
+        },
+        {
+            "type": "text",
+            "id": "button_text",
+            "label": "Button Text",
+            "default": "Sign Up"
+        },
+        {
+            "type": "text",
+            "id": "placeholder",
+            "label": "Email Placeholder",
+            "default": "Email address"
+        }
+    ]
+}
+{% endschema %}
